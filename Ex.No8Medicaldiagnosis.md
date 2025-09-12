@@ -57,7 +57,8 @@ symptom(raju,sore_throat).
 
 
 ### Output:
-![Uploading image.png…]()
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/a868d57f-ed7f-4fa6-be07-e5030da80899" />
+
 
 
 
