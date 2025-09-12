@@ -15,7 +15,33 @@ To write a logic program to design a circuit like half adder and half subtractor
 
 ### Program:
 
-
+ halfadder(X,Y,Sum,Carry):
+xor(X,Y,Sum),
+ and(X,Y,Carry).
+ halfsub(X,Y,Diff,Borrow):
+xor(X,Y,Diff),
+ not(X,Z),
+ and(Z,X,Borrow).
+ fulladd(X,Y,Z,Sum,Carry):
+xor(X,Y,A),
+ xor(A,Z,Sum),
+ and(A,Z,B),
+ and(X,Y,C),
+ or(B,C,Carry).
+ xor(0,0,0).
+ xor(0,1,1).
+ xor(1,0,1).
+ xor(1,1,0).
+ and(0,0,0).
+ and(0,1,0).
+ and(1,0,0).
+ and(1,1,1).
+ or(0,1,1).
+ or(0,0,0).
+ or(1,0,1).
+ or(1,1,1).
+ not(0,1).
+ not(1,0).
 
 
 
@@ -26,6 +52,8 @@ To write a logic program to design a circuit like half adder and half subtractor
 
 
 ### Output:
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/92b4d4fa-fc0b-439d-9ac7-d982b5b9a7c8" />
+
 
 
 
